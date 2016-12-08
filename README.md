@@ -1,6 +1,6 @@
 # Turkish-Stop-Word-Finder
 
-For a given word this finder tells it is stop word in Turkish or not.
+Stop word finder and remover for Turkish Language
 
 ## Usage
 Jar file can be downloaded from here : 
