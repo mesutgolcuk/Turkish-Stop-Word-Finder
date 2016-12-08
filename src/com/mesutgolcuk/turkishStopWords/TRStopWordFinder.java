@@ -51,5 +51,23 @@ public class TRStopWordFinder {
 		}
 		return false;
 	}
+	/**
+	 * Removes Turkish stop words from a sentence
+	 * @param sentence words are separated by space
+	 * @return sentence without stop words
+	 */
+	public String removeStopWords(String sentence){
+		String []parts = sentence.split(" ");
+		String sentenceWithoutStopWords = "";
+		
+		for( String each : parts){
+			if( !isStopWord(each) ){
+				sentenceWithoutStopWords += each +" ";
+			}
+		}
+		
+		return sentenceWithoutStopWords;
+		
+	}
 	
 }
