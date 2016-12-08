@@ -3,9 +3,9 @@
 For a given word this finder tells it is stop word in Turkish or not.
 
 ## Usage
-Jar file of this for Java projects can be downloaded from here : 
+Jar file can be downloaded from here : 
 
-[Download](https://drive.google.com/open?id=0B8NOqXJ764gpZE53SFlmRTAtUU0)
+[Download](https://drive.google.com/open?id=0B8NOqXJ764gpWlNvVGtNbTZwYlU)
 
 In order to use it 
 ```
@@ -15,7 +15,12 @@ create object
 ```
 TRStopWordFinder stopWordFinder = new TRStopWordFinder();
 ```
-then 
+if you want to check a word
 ```
 stopWordFinder.isStopWord("acaba")
+```
+
+or if you want to remove all stop words from a sentence 
+```
+stopWordFinder.removeStopWords("Uslu bir çocuk olursanız şirinleri görebilirsiniz")
 ```
